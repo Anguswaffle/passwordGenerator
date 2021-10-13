@@ -66,7 +66,7 @@ function generatePassword() {
   else if (!passLength) {
     return;
   } else {
-    alert("Please enter a number between 8 and 128");
+    alert("ONLY enter a number between 8 and 128. Not that difficult. Jeez.");
     return;
   } 
 
