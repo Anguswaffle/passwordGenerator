@@ -28,7 +28,7 @@ function generatePassword() {
   var lowAlphabet = "abcdefghijklmnopqrstuvwxyz";
   var upAlphabet = lowAlphabet.toUpperCase();
   var numbers = "1234567890";
-  var specialChars = "!@#$%^&*()_+=?/";
+  var specialChars = " !#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
   // Character bank begins as empty string
   var charBank = "";
