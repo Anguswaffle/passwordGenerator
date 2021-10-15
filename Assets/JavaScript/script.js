@@ -62,7 +62,7 @@ function generatePassword() {
     }
 
     for (i = 0; i < passLength; i++) {
-      localPassword = localPassword.concat(charBank.charAt(getRandomInt(charBank.length - 1)));
+      localPassword = localPassword.concat(charBank.charAt(getRandomInt(charBank.length)));
     }
 
     return localPassword;
