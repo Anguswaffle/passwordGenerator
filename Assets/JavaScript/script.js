@@ -55,6 +55,12 @@ function generatePassword() {
       charBank = charBank.concat(specialChars);
     }
 
+    // Bad input catch
+    if (charBank === "") {
+      alert("How do you expect to have a password with no characters?")
+      return;
+    }
+
     for (i = 0; i < passLength; i++) {
       localPassword = localPassword.concat(charBank.charAt(getRandomInt(charBank.length - 1)));
     }
@@ -64,10 +70,11 @@ function generatePassword() {
 
   // Error catching incorrect inputs
   else if (!passLength) {
+    alert("You forgot to enter a number between 8 and 128.")
     return;
   } else {
     alert("ONLY enter a number between 8 and 128. Not that difficult. Jeez.");
     return;
-  } 
+  }
 
 }
